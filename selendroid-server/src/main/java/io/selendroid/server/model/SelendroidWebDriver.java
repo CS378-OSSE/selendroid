@@ -13,25 +13,15 @@
  */
 package io.selendroid.server.model;
 
+import android.webkit.*;
 import io.selendroid.server.ServerInstrumentation;
-import io.selendroid.server.android.AndroidTouchScreen;
-import io.selendroid.server.android.KeySender;
-import io.selendroid.server.android.MotionSender;
-import io.selendroid.server.android.WebViewKeySender;
-import io.selendroid.server.android.WebViewMotionSender;
+import io.selendroid.server.android.*;
 import io.selendroid.server.android.internal.DomWindow;
 import io.selendroid.server.common.exceptions.SelendroidException;
 import io.selendroid.server.common.exceptions.StaleElementReferenceException;
 import io.selendroid.server.model.internal.WebViewHandleMapper;
 import io.selendroid.server.model.js.AndroidAtoms;
 import io.selendroid.server.util.SelendroidLogger;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
-
 import org.apache.cordova.CordovaChromeClient;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
@@ -39,11 +29,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.webkit.JsPromptResult;
-import android.webkit.JsResult;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
+import java.util.*;
 
 public class SelendroidWebDriver {
   private static final String ELEMENT_KEY = "ELEMENT";
@@ -70,6 +56,7 @@ public class SelendroidWebDriver {
   private MotionSender motionSender;
   private long scriptTimeout = 60000L;
   private long asyncScriptTimeout = 0L;
+  private long pageLoadTimeout = 30000L;
   private final String contextHandle;
 
   public SelendroidWebDriver(ServerInstrumentation serverInstrumentation, String handle) {
@@ -731,5 +718,9 @@ public class SelendroidWebDriver {
 
   public void setAsyncScriptTimeout(long timeout) {
     asyncScriptTimeout = timeout;
+  }
+
+  public void setPageLoadTimeout(long timeout) {
+
   }
 }
