@@ -1,4 +1,4 @@
-Selendroid
+Selendroid - kmartinez
 ==========
 
 [![Build Status](https://travis-ci.org/selendroid/selendroid.png?branch=master)](https://travis-ci.org/selendroid/selendroid)
