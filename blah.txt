@@ -1,0 +1,397 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] selendroid
+[INFO] android-driver-app
+[INFO] selendroid-server-common
+[INFO] selendroid-server
+[INFO] selendroid-grid-plugin
+[INFO] selendroid-common
+[INFO] selendroid-standalone
+[INFO] selendroid-client
+[INFO] selendroid-test-app
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building android-driver-app 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:generate-sources (default-generate-sources) @ android-driver-app ---
+[INFO] Manifest copied from /home/antony/Documents/selendroid/android-driver/AndroidManifest.xml to /home/antony/Documents/selendroid/android-driver/target/AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for io.selendroid:android-driver-app:apk:0.16.0-SNAPSHOT
+[INFO] Adding R gen folder to compile classpath: /home/antony/Documents/selendroid/android-driver/target/generated-sources/r
+[INFO] Adding AIDL gen folder to compile classpath: /home/antony/Documents/selendroid/android-driver/target/generated-sources/aidl
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ android-driver-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/android-driver/src/main/resources
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:manifest-update (update-manifest) @ android-driver-app ---
+[INFO] Attempting to update manifest /home/antony/Documents/selendroid/android-driver/target/AndroidManifest.xml
+[INFO] Testing if node application is application
+[INFO] No changes found to write to manifest file
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ android-driver-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/antony/Documents/selendroid/android-driver/target/classes
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:emma (default-emma) @ android-driver-app ---
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:proguard (default-proguard) @ android-driver-app ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ android-driver-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/android-driver/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ android-driver-app ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ android-driver-app ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:dex (default-dex) @ android-driver-app ---
+[INFO] Convert classes to Dex : /home/antony/Documents/selendroid/android-driver/target/classes.dex
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ android-driver-app ---
+[INFO] Building jar: /home/antony/Documents/selendroid/android-driver/target/android-driver-app-0.16.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:apk (default-apk) @ android-driver-app ---
+[INFO] Generating debug apk.
+[INFO] /home/antony/Documents/selendroid/android-driver/res/drawable-mdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/android-driver/res/drawable-hdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+[INFO] Adding native libraries : [/home/antony/Documents/selendroid/android-driver/target/ndk-libs]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-server-common 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selendroid-server-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-server-common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selendroid-server-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ selendroid-server-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-server-common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ selendroid-server-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ selendroid-server-common ---
+[INFO] Surefire report directory: /home/antony/Documents/selendroid/selendroid-server-common/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.selendroid.server.common.SelendroidResponseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ selendroid-server-common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-server 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:generate-sources (default-generate-sources) @ selendroid-server ---
+[INFO] Manifest copied from /home/antony/Documents/selendroid/selendroid-server/AndroidManifest.xml to /home/antony/Documents/selendroid/selendroid-server/target/AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for io.selendroid:selendroid-server:apk:0.16.0-SNAPSHOT
+[INFO] Adding R gen folder to compile classpath: /home/antony/Documents/selendroid/selendroid-server/target/generated-sources/r
+[INFO] Adding AIDL gen folder to compile classpath: /home/antony/Documents/selendroid/selendroid-server/target/generated-sources/aidl
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ selendroid-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:manifest-update (update-manifest) @ selendroid-server ---
+[INFO] Attempting to update manifest /home/antony/Documents/selendroid/selendroid-server/target/AndroidManifest.xml
+[INFO] Testing if node application is application
+[INFO] No changes found to write to manifest file
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selendroid-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 183 source files to /home/antony/Documents/selendroid/selendroid-server/target/classes
+[INFO] /home/antony/Documents/selendroid/selendroid-server/src/main/java/io/selendroid/server/model/DefaultSelendroidDriver.java: Some input files use or override a deprecated API.
+[INFO] /home/antony/Documents/selendroid/selendroid-server/src/main/java/io/selendroid/server/model/DefaultSelendroidDriver.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/antony/Documents/selendroid/selendroid-server/src/main/java/io/selendroid/server/model/internal/AbstractNativeElementContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/antony/Documents/selendroid/selendroid-server/src/main/java/io/selendroid/server/model/internal/AbstractNativeElementContext.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:emma (default-emma) @ selendroid-server ---
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:proguard (default-proguard) @ selendroid-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ selendroid-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ selendroid-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ selendroid-server ---
+[INFO] Surefire report directory: /home/antony/Documents/selendroid/selendroid-server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.selendroid.server.HandlerRegisteredTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec - in io.selendroid.server.HandlerRegisteredTest
+Running io.selendroid.server.GetStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.262 sec - in io.selendroid.server.GetStatusTest
+Running io.selendroid.server.model.internal.JsonXmlUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in io.selendroid.server.model.internal.JsonXmlUtilTest
+Running io.selendroid.server.model.internal.AbstractNativeElementContextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec - in io.selendroid.server.model.internal.AbstractNativeElementContextTest
+Running io.selendroid.server.model.KnownElementsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.295 sec - in io.selendroid.server.model.KnownElementsTest
+Running io.selendroid.server.CreateSessionHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.05 sec - in io.selendroid.server.CreateSessionHandlerTest
+
+Results :
+
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:dex (default-dex) @ selendroid-server ---
+[INFO] Convert classes to Dex : /home/antony/Documents/selendroid/selendroid-server/target/classes.dex
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ selendroid-server ---
+[INFO] Building jar: /home/antony/Documents/selendroid/selendroid-server/target/selendroid-server-0.16.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:apk (default-apk) @ selendroid-server ---
+[INFO] Generating debug apk.
+[INFO] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+[INFO] Adding native libraries : []
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-grid-plugin 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selendroid-grid-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.4:compile (default-compile) @ selendroid-grid-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ selendroid-grid-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-grid-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.4:testCompile (default-testCompile) @ selendroid-grid-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ selendroid-grid-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ selendroid-grid-plugin ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-common 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selendroid-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selendroid-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ selendroid-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ selendroid-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ selendroid-common ---
+[INFO] Surefire report directory: /home/antony/Documents/selendroid/selendroid-common/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.selendroid.common.SelendroidCapabilitiesGetDefaultAppTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec
+Running io.selendroid.common.device.DeviceTargetPlatformTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running io.selendroid.common.SelendroidCapabilitiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ selendroid-common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-standalone 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selendroid-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource to prebuild/
+[INFO] Copying 1 resource to prebuild/
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ selendroid-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ selendroid-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ selendroid-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ selendroid-standalone ---
+[INFO] Surefire report directory: /home/antony/Documents/selendroid/selendroid-standalone/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.selendroid.standalone.builder.SelendroidServerBuilderTest
+App name: testapp3177574510647758635.apk
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.417 sec
+Running io.selendroid.standalone.android.impl.DefaultAndroidAppTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running io.selendroid.standalone.android.impl.AbstractDeviceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 sec
+Running io.selendroid.standalone.server.handler.ProxyToDeviceHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running io.selendroid.standalone.server.model.impl.DefaultPortFinderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running io.selendroid.standalone.server.model.DeviceStoreTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec
+Running io.selendroid.standalone.server.model.SelendroidStandaloneDriverTest
+SelendroidDeviceServerStub is started on the following port: 38080
+SelendroidDeviceServerStub is started on the following port: 38081
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.707 sec
+
+Results :
+
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.2:jar (default-jar) @ selendroid-standalone ---
+[INFO] Building jar: /home/antony/Documents/selendroid/selendroid-standalone/target/selendroid-standalone-0.16.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4:attached (default) @ selendroid-standalone ---
+[INFO] Reading assembly descriptor: src/main/assembly/assembly.xml
+[INFO] Building jar: /home/antony/Documents/selendroid/selendroid-standalone/target/selendroid-standalone-0.16.0-SNAPSHOT-with-dependencies.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-client 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ selendroid-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selendroid-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ selendroid-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ selendroid-client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ selendroid-client ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ selendroid-client ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building selendroid-test-app 0.16.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:generate-sources (default-generate-sources) @ selendroid-test-app ---
+[INFO] Manifest copied from /home/antony/Documents/selendroid/selendroid-test-app/AndroidManifest.xml to /home/antony/Documents/selendroid/selendroid-test-app/target/AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Extracting apk selendroid-server...
+[INFO] Extracting apk android-driver-app...
+[INFO] Generating R file for io.selendroid:selendroid-test-app:apk:0.16.0-SNAPSHOT
+[INFO] Adding R gen folder to compile classpath: /home/antony/Documents/selendroid/selendroid-test-app/target/generated-sources/r
+[INFO] Adding AIDL gen folder to compile classpath: /home/antony/Documents/selendroid/selendroid-test-app/target/generated-sources/aidl
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ selendroid-test-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/antony/Documents/selendroid/selendroid-test-app/src/main/resources
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:manifest-update (update-manifest) @ selendroid-test-app ---
+[INFO] Attempting to update manifest /home/antony/Documents/selendroid/selendroid-test-app/target/AndroidManifest.xml
+[INFO] Testing if node application is application
+[INFO] No changes found to write to manifest file
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ selendroid-test-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /home/antony/Documents/selendroid/selendroid-test-app/target/classes
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/src/main/java/io/selendroid/testapp/server/NanoHTTPD.java: /home/antony/Documents/selendroid/selendroid-test-app/src/main/java/io/selendroid/testapp/server/NanoHTTPD.java uses or overrides a deprecated API.
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/src/main/java/io/selendroid/testapp/server/NanoHTTPD.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/src/main/java/io/selendroid/testapp/server/NanoHTTPD.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/src/main/java/io/selendroid/testapp/server/NanoHTTPD.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:emma (default-emma) @ selendroid-test-app ---
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:proguard (default-proguard) @ selendroid-test-app ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ selendroid-test-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ selendroid-test-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ selendroid-test-app ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:dex (default-dex) @ selendroid-test-app ---
+[INFO] Convert classes to Dex : /home/antony/Documents/selendroid/selendroid-test-app/target/classes.dex
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ selendroid-test-app ---
+[INFO] Building jar: /home/antony/Documents/selendroid/selendroid-test-app/target/selendroid-test-app-0.16.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- android-maven-plugin:4.1.1:apk (default-apk) @ selendroid-test-app ---
+[INFO] Generating debug apk.
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-hdpi/chrome.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-ldpi/chrome.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-ldpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-hdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-mdpi/chrome.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] /home/antony/Documents/selendroid/selendroid-test-app/res/drawable-mdpi/icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+[INFO] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+[INFO] Adding native libraries : []
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] selendroid ........................................ SUCCESS [0.001s]
+[INFO] android-driver-app ................................ SUCCESS [4.917s]
+[INFO] selendroid-server-common .......................... SUCCESS [1.129s]
+[INFO] selendroid-server ................................. SUCCESS [20.483s]
+[INFO] selendroid-grid-plugin ............................ SUCCESS [0.425s]
+[INFO] selendroid-common ................................. SUCCESS [0.545s]
+[INFO] selendroid-standalone ............................. SUCCESS [19.845s]
+[INFO] selendroid-client ................................. SUCCESS [0.516s]
+[INFO] selendroid-test-app ............................... SUCCESS [12.974s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:04.254s
+[INFO] Finished at: Sun Mar 22 18:41:56 CDT 2015
+[INFO] Final Memory: 41M/515M
+[INFO] ------------------------------------------------------------------------
