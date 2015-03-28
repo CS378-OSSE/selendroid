@@ -155,11 +155,18 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="パソコン版にする" />
-    
+
+    <LinearLayout
+            android:id="@+id/visibleTestArea3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="anotherTestArea" >
+
     <Button
             android:id="@+id/topLevelElementTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="4"
             android:onClick="displayAndFocus"
             android:text="Display and focus on layout" />
 
@@ -167,8 +174,10 @@
             android:id="@+id/touchTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="3"
             android:onClick="showTouchActionsDialog"
             android:text="Touch Actions" />
+    </LinearLayout>
 
     <LinearLayout
             android:id="@+id/focusedLayout"

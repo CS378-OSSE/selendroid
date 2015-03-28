@@ -62,9 +62,9 @@ public class GesturesDemo extends Activity
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
             float velocityY) {
-        String display = "FLING\n";
-        display += "dx: " + velocityX + " pps\n";
-        display += "dy: " + velocityY + " pps";
+        String display = "FLICK";
+        //display += "dx: " + velocityX + " pps\n";
+        //display += "dy: " + velocityY + " pps";
         gestureTypeTV.setText(display);
         return true;
     }
