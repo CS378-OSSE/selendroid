@@ -28,24 +28,22 @@ public class FingerView extends View {
 
   @Override
   public boolean onTouchEvent(MotionEvent event) {
-    int id = event.getPointerId(0);
+    int id = event.getPointerId(event.getActionIndex());
     int idx;
     switch (event.getActionMasked()) {
       case MotionEvent.ACTION_DOWN:
       case MotionEvent.ACTION_POINTER_DOWN:
         mPointers.add(id);
         Path pth = new Path();
-        pth.moveTo(event.getX(), event.getY());
+        pth.moveTo(event.getX(event.getActionIndex()), event.getY(event.getActionIndex()));
         paths.add(pth);
         break;
       case MotionEvent.ACTION_MOVE:
         idx = 0;
         for(Integer i : mPointers) {
-          if(mPointers.get(idx) == id)
-            break;
+          paths.get(idx).lineTo(event.getX(idx), event.getY(idx));
           idx++;
         }
-        paths.get(idx).lineTo(event.getX(), event.getY());
         break;
       case MotionEvent.ACTION_UP:
       case MotionEvent.ACTION_POINTER_UP:
