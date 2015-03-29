@@ -1,6 +1,7 @@
 package io.selendroid.testapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
+import android.view.View;
 import android.widget.TextView;
 
 public class GesturesDemo extends Activity 
@@ -108,6 +110,11 @@ public class GesturesDemo extends Activity
     public boolean onSingleTapConfirmed(MotionEvent arg0) {
         gestureTypeTV.setText("SINGLE TAP\nCONFIRMED");
         return true;
+    }
+
+    public void startCanvasActivity(View view) {
+      Intent intent = new Intent(getApplicationContext(), PaintCanvasActivity.class);
+      startActivity(intent);
     }
 
     // FROM http://developer.android.com/training/gestures/multi.html
