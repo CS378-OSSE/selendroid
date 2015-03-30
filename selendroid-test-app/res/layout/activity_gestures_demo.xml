@@ -65,4 +65,17 @@
         android:text="Scale Factor: 1.0"
         android:textSize="@dimen/scroll_text_view_text_size" />
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+        <Button
+                android:id="@+id/canvas_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canvas"
+                android:layout_alignParentBottom="true"
+                android:onClick="startCanvasActivity" />
+    </LinearLayout>
+
 </LinearLayout>
