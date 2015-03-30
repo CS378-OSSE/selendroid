@@ -9,7 +9,10 @@ import android.view.View;
 import java.util.ArrayList;
 
 /**
- * Created by Cameron on 3/29/2015.
+ * Paint canvas view for manual testing on touch gestures.
+ *
+ * @author colindmurray
+ * @author chooper9
  */
 public class FingerView extends View {
   private Paint paint;

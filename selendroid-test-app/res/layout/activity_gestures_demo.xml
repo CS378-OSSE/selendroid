@@ -12,7 +12,7 @@
     tools:context=".GesturesDemo" >
 
     <TextView
-        android:id="@+id/last_gesture"
+        android:id="@+id/last_gesture_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -20,13 +20,12 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/gesture_type"
+        android:id="@+id/gesture_type_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Gesture Type"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="18sp" />
 
     <TextView
@@ -35,7 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="18sp" />
 
     <TextView
@@ -44,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="18sp" />
 
     <TextView
@@ -53,11 +50,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/scale_factor_tv"
+        android:id="@+id/scale_factor_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
