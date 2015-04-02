@@ -25,11 +25,10 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>android.support-v4</groupId>
+			<groupId>com.android.support</groupId>
 			<artifactId>support-v4</artifactId>
-			<classifier>android</classifier>
-			<version>r8</version>
-			<scope>provided</scope>
+			<version>21.0.3</version>
+            <type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
